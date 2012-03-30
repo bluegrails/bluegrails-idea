@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.codehaus.gant:gant_groovy1.8:1.9.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/gant/gant_groovy1.8/1.9.6/gant_groovy1.8-1.9.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/gant/gant_groovy1.8/1.9.6/gant_groovy1.8-1.9.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/gant/gant_groovy1.8/1.9.6/gant_groovy1.8-1.9.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

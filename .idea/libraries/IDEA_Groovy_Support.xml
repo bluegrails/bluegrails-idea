@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="IDEA Groovy Support">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/Groovy/lib/Groovy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../ideaIC-111.69/plugins/groovy/src" />
+    </SOURCES>
+  </library>
+</component>

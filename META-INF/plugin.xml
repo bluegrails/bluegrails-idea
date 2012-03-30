@@ -1,0 +1,27 @@
+<idea-plugin version="2">
+  <name>Bluegrails Grails 2.x Maven plugin</name>
+  <description>IDEA support for Grails 2.x maven</description>
+  <version>9.1</version>
+  <vendor>Blue Train Software Ltd</vendor>
+
+  <depends>org.intellij.groovy</depends>
+  <depends>org.intellij.grails</depends>
+  <depends>org.jetbrains.idea.maven</depends>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <extensions defaultExtensionNs="org">
+    <intellij.grails.commandExecutor implementation="com.bluetrainsoftware.bluegrails.idea.MavenCommandExecutor" order="FIRST"/>
+    <jetbrains.idea.maven.importer implementation="com.bluetrainsoftware.bluegrails.idea.BluegrailsMavenImporter" order="after web" />
+  </extensions>
+</idea-plugin>
