@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bluegrails-idea.iml" filepath="$PROJECT_DIR$/bluegrails-idea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../grails-logging/grails-logging.iml" filepath="$PROJECT_DIR$/../grails-logging/grails-logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/../grails-maven/grails-maven-plugin.iml" filepath="$PROJECT_DIR$/../grails-maven/grails-maven-plugin.iml" />
     </modules>
   </component>

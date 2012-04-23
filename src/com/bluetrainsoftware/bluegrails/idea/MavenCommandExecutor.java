@@ -3,6 +3,7 @@ package com.bluetrainsoftware.bluegrails.idea;
 import com.intellij.execution.ExecutionException;
 import com.intellij.execution.configurations.JavaParameters;
 import com.intellij.execution.configurations.ParametersList;
+import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.module.Module;
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SettingsEditor;
@@ -31,6 +32,8 @@ import org.jetbrains.plugins.grails.runner.GrailsRunConfiguration;
 import org.jetbrains.plugins.groovy.grails.GrailsCommandExecutor;
 
 public class MavenCommandExecutor extends GrailsCommandExecutor {
+  private static final Logger LOG = Logger.getInstance("#org.jetbrains.plugins.grails.MavenCommandExecutor");
+  
   public boolean isApplicable(@NotNull Module module) {
     MavenProjectsManager mavenProjectsManager = MavenProjectsManager.getInstance(module.getProject());
 
@@ -63,9 +66,11 @@ public class MavenCommandExecutor extends GrailsCommandExecutor {
     // from the Maven dependencies.
     //
     // Plugins are inlined by the maven plugin as Grails 2.x deletes them on install as they are not in Ivy
+    LOG.info("Looking for Grails Plugins to add to command line - total projects = " + projectsManager.getProjects().size());
     for( MavenProject proj : projectsManager.getProjects() ) {
       if ("grails-plugin".equals(proj.getPackaging())) {
         Map<String,String> model = proj.getModelMap();
+        LOG.info("found " + model.get("groupId") + ":" + model.get("artifactId"));
         settings.getMavenProperties().put(model.get("groupId") + ":" + model.get("artifactId"), proj.getDirectory());
       }
     }

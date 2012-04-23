@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <name>Bluegrails Grails 2.x Maven plugin</name>
   <description>IDEA support for Grails 2.x maven</description>
-  <version>9.1</version>
+  <version>9.3</version>
   <vendor>Blue Train Software Ltd</vendor>
 
   <depends>org.intellij.groovy</depends>
@@ -17,7 +17,16 @@
   </project-components>
 
   <actions>
-    <!-- Add your actions here -->
+    <action id="GrailsMaven.RunBuild"
+            class="com.bluetrainsoftware.bluegrails.idea.RunGrailsBuildAction"
+            text="Run _Blue-Grails Maven Build"
+            description="Execute selected phases or goals"
+            icon="/actions/execute.png">
+      <add-to-group group-id="Maven.NavigatorProjectMenu" relative-to-action="Run Maven Build"/>
+      <add-to-group group-id="Maven.NavigatorActionsToolbar" relative-to-action="Run Maven Build"/>
+      <add-to-group group-id="Maven.BuildMenu" relative-to-action="Run Maven Build"/>
+    </action>
+
   </actions>
 
   <extensions defaultExtensionNs="org">

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: nz.ac.auckland.common:runnable-war-overlay:booter:2.4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/nz/ac/auckland/common/runnable-war-overlay/2.4/runnable-war-overlay-2.4-booter.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/nz/ac/auckland/common/runnable-war-overlay/2.4/runnable-war-overlay-2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/nz/ac/auckland/common/runnable-war-overlay/2.4/runnable-war-overlay-2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
