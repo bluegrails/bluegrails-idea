@@ -31,8 +31,6 @@ import org.jetbrains.plugins.grails.util.GrailsFacetProvider;
 public class BluegrailsMavenImporter extends MavenImporter {
   private static final Logger LOG = Logger.getInstance("#org.jetbrains.plugins.grails.BluegrailsMavenImporter");
 
-  private static final Set<String> IMPORTED_ARTIFACT_GROUPS = CollectionFactory.newTroveSet(new String[] { "javax.servlet", "org.grails" });
-
   public BluegrailsMavenImporter() {
     super("com.bluetrainsoftware.bluegrails", "grails-maven-plugin");
   }
@@ -53,14 +51,14 @@ public class BluegrailsMavenImporter extends MavenImporter {
   {
     FacetManager facetManager = FacetManager.getInstance(module);
 
-    List<Consumer<ModifiableRootModel>> actions = new ArrayList<Consumer<ModifiableRootModel>>();
+    List<Runnable> actions = new ArrayList<Runnable>();
 
     for (GrailsFacetProvider provider : (GrailsFacetProvider[])GrailsFacetProvider.EP_NAME.getExtensions()) {
       provider.addFacets(actions, facetManager, module, Collections.singletonList(mavenProject.getDirectoryFile()));
     }
 
-    for (Consumer<ModifiableRootModel> action : actions)
-      action.consume(null);
+    for (Runnable action : actions)
+      action.run();
   }
 
   public void collectSourceFolders(MavenProject mavenProject, List<String> result)
