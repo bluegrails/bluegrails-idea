@@ -9,7 +9,8 @@
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
     <file path="/Dummy.txt" changelist="0e88eb2d-0234-4ddf-ac58-99fff46505fb" time="1355711572713" ignored="false" />
-    <file path="/BluegrailsMavenImporter.java" changelist="0e88eb2d-0234-4ddf-ac58-99fff46505fb" time="1355715836361" ignored="false" />
+    <file path="/BluegrailsMavenImporter.java" changelist="0e88eb2d-0234-4ddf-ac58-99fff46505fb" time="1355883031856" ignored="false" />
+    <file path="/fragment.java" changelist="0e88eb2d-0234-4ddf-ac58-99fff46505fb" time="1355882667869" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,8 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/../grails-maven/src/main/java/org/grails/maven/plugin/GrailsPackagePluginMojo.java" line="58" class="org.grails.maven.plugin.GrailsPackagePluginMojo" package="org.grails.maven.plugin">
         <option name="ENABLED" value="true" />
@@ -74,8 +77,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -94,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MavenExternalParameters.class" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MavenExternalParameters.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/org/jetbrains/idea/maven/execution/MavenExternalParameters.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="19" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.2614108">
+            <state line="22" column="19" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,16 +125,25 @@
       <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="94" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+            <state line="3" column="15" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BluegrailsMavenImporter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BluegrailsMavenImporter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bluetrainsoftware/bluegrails/idea/BluegrailsMavenImporter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="22" selection-start="2817" selection-end="2817" vertical-scroll-proportion="0.0">
+            <state line="56" column="13" selection-start="2256" selection-end="2256" vertical-scroll-proportion="0.64453125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NativeMavenProjectHolder.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven-server-api.jar!/org/jetbrains/idea/maven/server/NativeMavenProjectHolder.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="17" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.0">
               <folding />
             </state>
           </provider>
@@ -142,7 +152,7 @@
       <file leaf-file-name="MavenImporter.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/org/jetbrains/idea/maven/importing/MavenImporter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+            <state line="29" column="14" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-9.88">
               <folding />
             </state>
           </provider>
@@ -249,6 +259,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -258,56 +269,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bluegrails-idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bluegrails-idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bluegrails-idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bluegrails-idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bluegrails-idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bluegrails-idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
@@ -480,7 +449,6 @@
       <module name="bluegrails-idea" />
       <option name="VM_PARAMETERS" value="-Xmx1024m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <log_file path="$USER_HOME$/.IntelliJIdea11/system/plugins-sandbox/system/log/idea.log" checked="false" skipped="true" show_all="false" alias="IDEA LOG" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
@@ -564,7 +532,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3570887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35703245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -572,11 +540,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16151468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15592681" sideWeight="0.39335394" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23945902" sideWeight="0.8384853" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15592681" sideWeight="0.1282844" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24343675" sideWeight="0.6429675" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15592681" sideWeight="0.60123646" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15592681" sideWeight="0.5092736" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -699,11 +667,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/maven/maven-settings/2.0.7/maven-settings-2.0.7.jar!/org/apache/maven/settings/Settings.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="-1.0166241" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../grails-maven/src/main/java/org/grails/maven/plugin/MvnGrailsAppWarMojo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="0" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0" />
@@ -734,13 +697,6 @@
         <state line="6" column="22" selection-start="187" selection-end="187" vertical-scroll-proportion="0.06107492" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="94" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/Grails/lib/grails_integration.jar!/org/jetbrains/plugins/grails/util/GrailsFacetProvider.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="7" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
@@ -755,30 +711,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/org/jetbrains/idea/maven/importing/MavenImporter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bluetrainsoftware/bluegrails/idea/BluegrailsMavenImporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="22" selection-start="2817" selection-end="2817" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bluetrainsoftware/bluegrails/idea/RunGrailsBuildAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bluetrainsoftware/bluegrails/idea/MavenCommandExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="60" selection-start="4500" selection-end="4500" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -792,7 +727,42 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/org/jetbrains/idea/maven/execution/MavenExternalParameters.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="19" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.2614108">
+        <state line="22" column="19" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bluetrainsoftware/bluegrails/idea/MavenCommandExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="60" selection-start="4500" selection-end="4500" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="15" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven-server-api.jar!/org/jetbrains/idea/maven/server/NativeMavenProjectHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/org/jetbrains/idea/maven/importing/MavenImporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="14" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-9.88">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bluetrainsoftware/bluegrails/idea/BluegrailsMavenImporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="13" selection-start="2256" selection-end="2256" vertical-scroll-proportion="0.64453125">
           <folding />
         </state>
       </provider>
