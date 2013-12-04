@@ -30,6 +30,7 @@ import org.jetbrains.idea.maven.project.MavenProject;
 import org.jetbrains.idea.maven.project.MavenProjectsManager;
 import org.jetbrains.plugins.grails.runner.GrailsRunConfiguration;
 import org.jetbrains.plugins.groovy.grails.GrailsCommandExecutor;
+import org.jetbrains.plugins.groovy.mvc.MvcCommand;
 
 public class MavenCommandExecutor extends GrailsCommandExecutor {
   private static final Logger LOG = Logger.getInstance("#org.jetbrains.plugins.grails.MavenCommandExecutor");
@@ -49,6 +50,16 @@ public class MavenCommandExecutor extends GrailsCommandExecutor {
   public JavaParameters createJavaParameters(@NotNull Module module, boolean forCreation, @Nullable String jvmParams, @NotNull String command, @NotNull String[] args)
     throws ExecutionException {
     return createJavaParameters(module, jvmParams, null, command, args);
+  }
+
+  @Override
+  public JavaParameters createJavaParameters(@NotNull Module module, boolean b, @Nullable String s, @NotNull MvcCommand mvcCommand) throws ExecutionException {
+    return null;
+  }
+
+  @Override
+  public JavaParameters createJavaParametersForRun(@NotNull Module module, boolean b, @Nullable String s, @Nullable Object o, @NotNull MvcCommand mvcCommand) throws ExecutionException {
+    return null;
   }
 
   private static JavaParameters createJavaParameters(@NotNull Module module, @Nullable String jvmParams, @Nullable MavenGeneralSettings generalSettings, @NotNull String command, @NotNull String[] args)
@@ -95,7 +106,8 @@ public class MavenCommandExecutor extends GrailsCommandExecutor {
     return res;
   }
 
-  public JavaParameters createJavaParametersForRun(@NotNull Module module, boolean classpathFromDependencies, @Nullable String jvmParams, @Nullable Object additionalConfiguration, @NotNull String command, @NotNull String[] args)
+  public JavaParameters createJavaParametersForRun(@NotNull Module module, boolean classpathFromDependencies, @Nullable String jvmParams,
+                                                   @Nullable Object additionalConfiguration, @NotNull String command, @NotNull String[] args)
     throws ExecutionException {
     return createJavaParameters(module, jvmParams, (MavenGeneralSettings) additionalConfiguration, command, args);
   }

@@ -14,7 +14,9 @@
           <root url="jar://$APPLICATION_HOME_DIR$/plugins/Grails/lib/grails_integration.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../tmp/idea" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="PROVIDED">
@@ -25,6 +27,7 @@
         <JAVADOC />
         <SOURCES>
           <root url="file://$MODULE_DIR$/../../ideaIC-111.69/plugins/maven/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../tmp/idea" />
         </SOURCES>
       </library>
     </orderEntry>

@@ -2,28 +2,22 @@ package com.bluetrainsoftware.bluegrails.idea;
 
 import com.intellij.facet.FacetManager;
 import com.intellij.openapi.diagnostic.Logger;
-import com.intellij.openapi.extensions.ExtensionPointName;
 import com.intellij.openapi.module.Module;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.roots.ModifiableRootModel;
-import com.intellij.util.Consumer;
-import com.intellij.util.containers.CollectionFactory;
-import gnu.trove.THashSet;
-
-import java.util.*;
-
+import com.intellij.util.PairConsumer;
 import org.jetbrains.idea.maven.importing.MavenImporter;
 import org.jetbrains.idea.maven.importing.MavenModifiableModelsProvider;
 import org.jetbrains.idea.maven.importing.MavenRootModelAdapter;
 import org.jetbrains.idea.maven.model.MavenArtifact;
-import org.jetbrains.idea.maven.model.MavenId;
-import org.jetbrains.idea.maven.model.MavenPlugin;
 import org.jetbrains.idea.maven.project.*;
 import org.jetbrains.idea.maven.server.MavenEmbedderWrapper;
 import org.jetbrains.idea.maven.server.NativeMavenProjectHolder;
 import org.jetbrains.idea.maven.utils.MavenProcessCanceledException;
+import org.jetbrains.jps.model.module.JpsModuleSourceRootType;
 import org.jetbrains.plugins.grails.config.GrailsFramework;
 import org.jetbrains.plugins.grails.util.GrailsFacetProvider;
+
+import java.util.*;
 
 public class BluegrailsMavenImporter extends MavenImporter {
   private static final Logger LOG = Logger.getInstance("#org.jetbrains.plugins.grails.BluegrailsMavenImporter");
@@ -39,16 +33,8 @@ public class BluegrailsMavenImporter extends MavenImporter {
     result.add("grails-plugin2");
   }
 
-  public void resolve(Project project, MavenProject mavenProject, NativeMavenProjectHolder nativeMavenProject, MavenEmbedderWrapper embedder)
-    throws MavenProcessCanceledException
-  {
-//    for (MavenArtifact artifact : mavenProject.getDependencies()) {
-//      if ("grails-plugin2".equals(artifact.getType())) {
-//        mavenProject.addDependency(artifact);
-//      }
-//    }
-    // needs to also import grails-plugin2 projects
-  }
+	public void resolve(final Project project, final MavenProject mavenProject, final NativeMavenProjectHolder nativeMavenProject, final MavenEmbedderWrapper embedder, final ResolveContext context) throws MavenProcessCanceledException {
+	}
 
   public void preProcess(Module module, MavenProject mavenProject, MavenProjectChanges changes, MavenModifiableModelsProvider modifiableModelsProvider)
   {
@@ -68,13 +54,17 @@ public class BluegrailsMavenImporter extends MavenImporter {
       action.run();
   }
 
-  public void collectSourceFolders(MavenProject mavenProject, List<String> result)
-  {
-    Collections.addAll(result, GrailsFramework.GRAILS_SOURCE_FOLDERS);
-  }
+	public void collectSourceRoots(final MavenProject mavenProject, final PairConsumer<String, JpsModuleSourceRootType<?>> result) {
+		for (final Map.Entry<JpsModuleSourceRootType<?>, Collection<String>> entry : GrailsFramework.GRAILS_SOURCE_FOLDERS.entrySet()) {
+			final JpsModuleSourceRootType<?> type = entry.getKey();
+			for (final String path : entry.getValue()) {
+				result.consume(path, type);
+			}
+		}
+	}
 
-  public void collectTestFolders(MavenProject mavenProject, List<String> result)
-  {
-    Collections.addAll(result, GrailsFramework.GRAILS_TEST_FOLDERS);
-  }
+//  public void collectTestFolders(MavenProject mavenProject, List<String> result)
+//  {
+//    Collections.addAll(result, GrailsFramework.GRAILS_TEST_FOLDERS);
+//  }
 }
