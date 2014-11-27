@@ -1,9 +1,9 @@
 <idea-plugin version="2">
   <name>Bluegrails Grails 2.x+ Maven plugin</name>
   <description>IDEA support for Grails 2.x+ maven</description>
-  <version>11.1</version>
+  <version>14.1</version>
   <vendor>Blue Train Software Ltd</vendor>
-  <description>Supports grails-plugin2 plugins</description>
+  <description>Supports grails-plugin2 plugins on IntelliJ IDEA 14.x</description>
 	<idea-version since-build="133.192"/>
 
   <depends>org.intellij.groovy</depends>
